@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_profile"
+            android:title="@string/profile"
+            android:icon="@drawable/profile_logo" />
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/home_icon2"
+            android:title="@string/menu_home" />
+
+        <item
+            android:id="@+id/nav_farecollection"
+            android:icon="@drawable/money_icon"
+            android:title="@string/collect_fare"/>
+
+        <item
+            android:id="@+id/nav_workinghours"
+            android:icon="@drawable/time_icon"
+            android:title="@string/working_hours"/>
+
+
+
+        <item
+            android:id="@+id/nav_transactionhistory"
+            android:icon="@drawable/baseline_history_24"
+            android:title="@string/transaction_history" />
+
+        <item
+            android:id="@+id/nav_faresettings"
+            android:icon="@drawable/settings_icon"
+            android:title="@string/fare_settings"/>
+
+
+
+        <item
+            android:id="@+id/nav_logout"
+            android:title="@string/logout"
+            android:icon="@drawable/baseline_logout_24" />
+
+    </group>
+</menu>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    android:padding="16dp">
+
+    <!-- Main content layout inside ScrollView -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Header with Logo and Name -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="147dp"
+                android:layout_marginBottom="50dp"
+                android:layout_gravity="center_horizontal"
+                android:paddingTop="20dp"
+                android:src="@drawable/app_logo"
+                />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-35dp"
+            android:background="@drawable/bluegradientbackgroundnoradius"
+            android:gravity="center"
+            android:padding="12dp"
+            android:text="@string/transaction_history1"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="125dp"
+            android:layout_marginEnd="125dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/savedroutesbg"
+            android:gravity="center"
+            android:padding="3dp"
+            android:text="@string/today"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp" />
+
+        <TableLayout
+            android:id="@+id/transactions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="0"
+            android:background="@color/white"
+            android:divider="?android:attr/dividerHorizontal"
+            android:showDividers="middle"
+            android:layout_marginBottom="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            >
+
+            <TableRow
+                android:divider="?android:attr/dividerHorizontal"
+                android:showDividers="middle">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"/>
+
+
+
+
+            </TableRow>
+
+
+        </TableLayout>
+
+
+    </LinearLayout>
+</ScrollView>

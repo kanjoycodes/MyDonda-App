@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "875766945212",
+    "project_id": "testdondaa",
+    "storage_bucket": "testdondaa.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:875766945212:android:507097b5ab9cf4d6e047b9",
+        "android_client_info": {
+          "package_name": "com.firstapp.testdondaapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA39fDU6UzuGbVdWGv2snaG8g3ddWUFckY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

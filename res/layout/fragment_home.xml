@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/fragment_container"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    android:padding="16dp">
+
+    <!-- Main content layout inside ScrollView -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Header with Logo and Name -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="147dp"
+                android:layout_gravity="center_horizontal"
+                android:paddingTop="20dp"
+                android:src="@drawable/app_logo"
+              />
+        </RelativeLayout>
+
+        <!-- Welcome Text -->
+        <TextView
+            android:id="@+id/textHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Hello 👋👋"
+            android:fontFamily="@font/montserrat_regular"
+            android:textColor="#000"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp" />
+
+        <!-- Balance and Amount Collected -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="103dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/bluebackground"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BALANCE"
+                android:fontFamily="@font/montserrat_regular"
+                android:textColor="#000"
+                android:textSize="28sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ksh 0.00"
+                android:fontFamily="@font/montserrat_regular"
+                android:textColor="#000"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AMT. COLLECTED TODAY: Ksh 0.00"
+                android:textColor="#000"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <!-- Collect Fare Button -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnCollect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="COLLECT FARE"
+            android:fontFamily="@font/montserrat_regular"
+            android:background="@drawable/maroongradientbackground"
+            android:textColor="@color/white"
+               android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:gravity="center"/>
+
+        <!-- Trips Done and Working Hours -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp"
+            android:weightSum="2"
+            android:gravity="center_horizontal">
+
+            <View
+                android:layout_width="8dp"
+                android:layout_height="match_parent" />
+
+            <LinearLayout
+                android:id="@+id/transaction_history"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:background="@drawable/bluegradientbackground"
+                android:padding="16dp"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Check your transaction history:"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Current Trip Section -->
+
+        <!-- Profile Information Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/bluebackground"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/montserrat_regular"
+                android:text="Hello dear conductor,\n\nYou are advised to keep you and your passengers safe. Ensure all your passengers wear seatbelts during the journey.\n\nIn case of any suspicious activity among the passengers, ensure you call 999.\n\nRemember that you are constantly being monitored by various boards of travel."
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
